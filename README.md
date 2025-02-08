@@ -2,8 +2,8 @@
 
 This repository contains solutions for the ARM Template and PowerShell Assement :
 
-1. **ARM Template Deployment(Chose Problem 3)**: Deploy multiple Azure Storage Accounts with different replication types using a single parameter file.
-2. **PowerShell Script for Windows Update(Chose Problem 1)**: A script that runs Windows updates with an option to restart or ignore restart.
+1. **Section 1 -ARM Templates - ARM Template Deployment(Chose Problem 3)**: Deploy multiple Azure Storage Accounts with different replication types using a single parameter file.
+2. **Section 2:Powershell - PowerShell Script for Windows Update(Chose Problem 1)**: A script that runs Windows updates with an option to restart or ignore restart.
 
 ## Repository Structure
 
@@ -16,7 +16,7 @@ This repository contains solutions for the ARM Template and PowerShell Assement 
 
 ---
 
-## **Solution 1(Chose Problem 3): ARM Template for Deploying Storage Accounts**
+## **Section 1 Solution (Chose Problem 3): ARM Template for Deploying Storage Accounts**
 
 ### **Overview:**
 
@@ -39,7 +39,7 @@ Replace `<ResourceGroup>` with the appropriate Azure resource group name.
 
 ---
 
-## **Solution 2 (Chose Problem 1): PowerShell Script to Run Windows Updates**
+## **Section 2 Solution  (Chose Problem 1): PowerShell Script to Run Windows Updates**
 
 ### **Overview:**
 
