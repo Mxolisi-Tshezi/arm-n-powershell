@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storageAccounts": {
+        "type": "array",
+        "metadata": {
+          "description": "List of storage accounts to create with names and replication types"
+        }
+      }
+    },
+    "resources": [
+      {
+        "type": "Microsoft.Storage/storageAccounts",
+        "apiVersion": "2021-04-01",
+        "name": "[parameters('storageAccounts')[copyIndex()].name]",
+        "location": "eastus",
+        "sku": {
+          "name": "[parameters('storageAccounts')[copyIndex()].sku]"
+        },
+        "kind": "StorageV2",
+        "properties": {},
+        "copy": {
+          "name": "storageCopy",
+          "count": "[length(parameters('storageAccounts'))]"
+        }
+      }
+    ],
+    "outputs": {
+      "deployedStorageAccounts": {
+        "type": "array",
+        "value": "[parameters('storageAccounts')]"
+      }
+    }
+  }

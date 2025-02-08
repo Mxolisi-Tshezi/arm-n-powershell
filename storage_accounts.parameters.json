@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storageAccounts": {
+        "value": [
+          {
+            "name": "storageaccount1",
+            "sku": "Standard_LRS"
+          },
+          {
+            "name": "storageaccount2",
+            "sku": "Standard_GRS"
+          },
+          {
+            "name": "storageaccount3",
+            "sku": "Premium_ZRS"
+          }
+        ]
+      }
+    }
+  }
